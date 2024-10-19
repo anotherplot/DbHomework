@@ -1,4 +1,4 @@
-namespace DnHomework.Models;
+namespace DbHomework.Models;
 
 public class ToDoTask
 {

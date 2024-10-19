@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnHomework", "DnHomework\DnHomework.csproj", "{F7D9A522-A521-4E46-89CC-C8EB67CDFA01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbHomework", "DbHomework\DbHomework.csproj", "{F7D9A522-A521-4E46-89CC-C8EB67CDFA01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
