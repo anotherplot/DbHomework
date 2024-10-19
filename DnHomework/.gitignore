@@ -1,0 +1,16 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# JetBrains Rider
+.env
+.idea/
+*.sln.iml
+
+# certs
+certs/
+
+# .http private env
+*.private.env.json
