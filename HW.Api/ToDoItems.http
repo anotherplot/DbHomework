@@ -1,6 +1,6 @@
 @DbHomework_HostAddress = http://localhost:5039
 
-GET {{DbHomework_HostAddress}}/weatherforecast/
+GET {{DbHomework_HostAddress}}/Get/
 Accept: application/json
 
 ###
