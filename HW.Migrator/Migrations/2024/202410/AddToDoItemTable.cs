@@ -8,7 +8,7 @@ public class AddToDoItemTable : Migration
     public override void Up()
     {
         Execute.Sql(@"
-            CREATE TABLE IF NOT EXISTS `ToDoItem` (
+            CREATE TABLE IF NOT EXISTS `toDoItems` (
               `Id` int(11) NOT NULL AUTO_INCREMENT,
               `Title` longtext NOT NULL,
               `Description` longtext DEFAULT NULL,

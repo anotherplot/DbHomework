@@ -1,3 +1,5 @@
+using DbHomework;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+// builder.Services
+//     .AddOptions(builder.Configuration);
+
+builder.Services.AddServices(builder.Configuration);
 
 var app = builder.Build();
 
@@ -23,3 +30,4 @@ app.MapControllerRoute(
 
 
 app.Run();
+

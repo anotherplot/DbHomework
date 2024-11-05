@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.Api", "HW.Api\HW.Api.csproj", "{F7D9A522-A521-4E46-89CC-C8EB67CDFA01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW", "HW\HW.csproj", "{F7D9A522-A521-4E46-89CC-C8EB67CDFA01}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.Migrator", "HW.Migrator\HW.Migrator.csproj", "{5940F4F9-A26A-4001-89D9-4299EA00041C}"
 EndProject
