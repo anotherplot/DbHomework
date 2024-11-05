@@ -1,17 +1,15 @@
 using DbHomework.Repositories;
 
-namespace DbHomework;
+namespace DbHomework.Configs;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddServices(this IServiceCollection serviceCollection,
+    public static void AddServices(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
         serviceCollection
             .AddSingleton<IToDoItemRepository, ToDoItemRepository>()
             .AddOptions<ConnectionStringOptions>()
             .Bind(configuration.GetSection("ConnectionStrings"));
-
-        return serviceCollection;
     }
 }

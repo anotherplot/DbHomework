@@ -1,6 +1,6 @@
 namespace DbHomework.Scripts;
 
-public static partial class Sql
+public static class Sql
 {
     public static string ToDoItemCreate =>
         @"insert into 

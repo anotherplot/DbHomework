@@ -1,6 +1,6 @@
-namespace DbHomework;
+namespace DbHomework.Configs;
 
 public class ConnectionStringOptions
 {
-    public string AppConnection { get; set; }
+    public string? AppConnection { get; set; }
 }

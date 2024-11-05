@@ -1,4 +1,5 @@
 using DbHomework;
+using DbHomework.Configs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-
-// builder.Services
-//     .AddOptions(builder.Configuration);
 
 builder.Services.AddServices(builder.Configuration);
 
@@ -30,4 +28,3 @@ app.MapControllerRoute(
 
 
 app.Run();
-

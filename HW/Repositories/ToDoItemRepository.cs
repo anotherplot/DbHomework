@@ -1,17 +1,17 @@
 using System.Data;
 using System.Data.Common;
+using DbHomework.Configs;
 using DbHomework.Models;
-using DbHomework.Repositories;
 using DbHomework.Scripts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MySqlConnector;
 
-namespace DbHomework;
+namespace DbHomework.Repositories;
 
 public class ToDoItemRepository(IOptions<ConnectionStringOptions> config) : IToDoItemRepository
 {
-    private readonly string _connectionString = config.Value.AppConnection;
+    private readonly string? _connectionString = config.Value.AppConnection;
     private readonly int _commandTimeout = TimeSpan.FromSeconds(5).Seconds;
 
     public async Task<long> Create(ToDoItemDto dto, CancellationToken ct)
