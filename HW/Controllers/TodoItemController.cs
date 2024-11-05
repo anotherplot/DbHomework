@@ -39,9 +39,8 @@ public class TodoItemController(IToDoItemRepository toDoItemRepository) : Contro
 
     [HttpGet("GetToDoItemsList")]
     [Produces("application/json")]
-    public ActionResult GetList(CancellationToken ct)
+    public IAsyncEnumerable<ToDoItemDto> GetList(CancellationToken ct = default)
     {
-        var result = toDoItemRepository.GetList(ct);
-        return Ok(result);
+        return toDoItemRepository.GetList(ct);
     }
 }
